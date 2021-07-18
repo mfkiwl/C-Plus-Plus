@@ -176,7 +176,7 @@ Variables</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_gaf5ce14f026d6d231bef29161bac2b485_cgraph.svg" width="204" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_gaf5ce14f026d6d231bef29161bac2b485_cgraph.svg" width="207" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -231,9 +231,9 @@ Here is the call graph for this function:</div>
 </dl>
 <div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                        {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    val[0] = INFINITY;  <span class="comment">// initial min value</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">size_t</span> N = X.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = X.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++) {  <span class="comment">// traverse each x-index</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {  <span class="comment">// traverse each x-index</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keyword">auto</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min_element.html">std::min_element</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(X[i]), <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(X[i]));</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">double</span> d_min = *<a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/ptrdiff_t.html">std::ptrdiff_t</a> j = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/distance.html">std::distance</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(X[i]), result);</div>
@@ -247,6 +247,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
+<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition:</b> sparse_table.cpp:47</div></div>
 <div class="ttc" id="adistance_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/distance.html">std::distance</a></div><div class="ttdeci">T distance(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:76</div></div>
@@ -256,7 +257,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_gab53c14440b2b2dd3172c66afc5c2f63f_cgraph.svg" width="271" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_gab53c14440b2b2dd3172c66afc5c2f63f_cgraph.svg" width="275" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -337,7 +338,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_ga6c606bc85a3e9fd9d010f874ad760336_cgraph.svg" width="314" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_ga6c606bc85a3e9fd9d010f874ad760336_cgraph.svg" width="318" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -411,7 +412,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_ga72699c805c19a6cc47a937a6f3378afa_cgraph.svg" width="314" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_ga72699c805c19a6cc47a937a6f3378afa_cgraph.svg" width="318" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
